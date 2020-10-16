@@ -91,18 +91,20 @@
 
       .list_categorias {
 
-        border: 2px; width: 100%; color: black; 
+        border: 2px;  color: black; 
         font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         display: table;
+        width: 20%;
       }
       
       .filtro {
 
         display: table-cell;
-        width: 20%;
-        float: left;
         
+        
+        font-family: Arial, Helvetica, sans-serif;
+      
       }
       /* Fim da Table Categorias */  
      
@@ -111,8 +113,8 @@
       .produtos {
 
         display: table-cell;
-        width: 100%;
-        float: right;
+        width: 80%;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around
@@ -123,20 +125,21 @@
       .box_produtos {
         width: 20%;
         border: solid 2px;
-        box-shadow: 10px 10px 10px  grey;
         padding: 10px;
         margin: 10px;
         box-sizing: border-box;
+        box-shadow: 10px 10px 10px  grey;
         border-radius: 30px;
         background-color: white;
         text-align: center;
       }
-     
+      
+      
       .box_produtos img {
 
         
-          width: 75%;
-          height: 45%;
+          width: 77%;
+          height: 40%;
           object-fit: cover;
           border-radius: 5px;
         
@@ -148,11 +151,23 @@
       #stars {width: 90px; height: 15px; text-align: center;}
       
       
-      .video_intel {width: 500px;}
+       .video_intel {
+          width: 500px; 
+          
+       }
       
-      #titulos_dos_videos {text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px;}
+      #titulos_dos_videos {
+          text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 20px;
+          
+      }
       
-      .descricao_dos_produtos {
+       #posicao_videos {
+          padding-top: 0px;
+          text-align: center;
+
+       }
+      
+       .descricao_dos_produtos {
 
         font-family: Arial, Helvetica, sans-serif;
         size: 2;
@@ -199,7 +214,7 @@
 
      .background_nossa_loja {
 
-        background-image: url(./Background/background_blue.jpg);
+        background-image: url(./Background/back_outras.jpg);
         background-attachment: fixed; background-repeat: no-repeat;
      }
 
@@ -287,7 +302,7 @@
 
              .background_inicial {
 
-                background-image: url(./Background/back24k.jpg);
+                background-image: url(./Background/back_inicial.jpg);
                 background-attachment: fixed;
                 background-position: auto;
                 background-repeat: no-repeat;
@@ -320,16 +335,38 @@
 
               .linhas2 {
 
-                width: 65%; 
+                width: 98%; 
                 border-style: solid;
                 border-color:goldenrod;
-                
+                margin-top: 100px;
+                margin-bottom: 100px;
               }
 
+                #principal {
+
+                  
+                  display: flex;
+
+                }
+                
+                #linhas3 {
+                  margin-top: 100px;
+                  color: goldenrod;
+                }
                 .car {
 
                    width: 80px;
                    
                    display: flex;
                    
+                }
+
+
+                #style_hr {
+
+                  color: goldenrod;
+                  border-style: solid;
+                 
+                  
+
                 }
