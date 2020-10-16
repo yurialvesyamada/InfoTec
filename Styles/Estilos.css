@@ -325,3 +325,11 @@
                 border-color:goldenrod;
                 
               }
+
+                .car {
+
+                   width: 80px;
+                   
+                   display: flex;
+                   
+                }
