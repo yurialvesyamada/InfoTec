@@ -235,16 +235,16 @@
        </footer>
        
        <?php
-            $servidor = "localhost";
-            $login = "root";
-            $senha = "";
-            $bancodados = "infotec";
-            $link = mysqli_connect($servidor, $login, $senha, $bancodados);
-            if (!$link)
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "infotec";
+            $conn = mysqli_connect($servername, $username, $password, $database);
+            if (!$conn)
             die (“Falha na conexão com o BD " . mysqli_connect_errno());
             else
             echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
-            mysqli_close($link);
+            mysqli_close($conn);
        ?>
 
       
