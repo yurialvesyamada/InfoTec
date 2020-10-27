@@ -10,7 +10,7 @@
    <!-- Inicio do menu --> 
      <nav class="menu">
       <a href="index.html"> <img src="./img/Logo2.png" alt="InfoTec" width="100px"> </a>
-      <a href="Produtos.html">Produtos:</a>  
+      <a href="Produtos.php">Produtos:</a>  
       <a href="Loja.html">Nossa Loja:</a>
       <a href="Contato.html">Contato:</a>
         <img class="car" src="./img/carrinho de compras.png " onmouseout="zoom(this)" onmousemove="normal1(this)" title="Carrinho de Compras">
@@ -235,17 +235,18 @@
        </footer>
        
        <?php
-       $servidor = “localhost”;
-       $login = “root”;
-       $senha = “”;
-       $bancodados = “infotec”;
-       $link = mysqli_connect($servidor, $login, $senha, $bancodados);
-       if (!$link)
-       die (“Falha na conexão com o BD " . mysqli_connect_errno());
-       else
-       echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
-       mysqli_close($link);
+            $servidor = "localhost";
+            $login = "root";
+            $senha = "";
+            $bancodados = "infotec";
+            $link = mysqli_connect($servidor, $login, $senha, $bancodados);
+            if (!$link)
+            die (“Falha na conexão com o BD " . mysqli_connect_errno());
+            else
+            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
+            mysqli_close($link);
        ?>
+
       
 
 
