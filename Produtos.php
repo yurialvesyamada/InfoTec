@@ -1,3 +1,15 @@
+ <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "infotec";
+            $conn = mysqli_connect($servername, $username, $password, $database);
+            if (!$conn)
+            die (“Falha na conexão com o BD " . mysqli_connect_errno());
+            else
+            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
+            mysqli_close($conn);
+ ?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -233,21 +245,6 @@
             <img src="./img/Pagamento.png" width="30%"> 
             <p id="InfoTec"> &copy; InfoTec </p> 
        </footer>
-       
-       <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "infotec";
-            $conn = mysqli_connect($servername, $username, $password, $database);
-            if (!$conn)
-            die (“Falha na conexão com o BD " . mysqli_connect_errno());
-            else
-            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
-            mysqli_close($conn);
-       ?>
-
-      
 
 
     </body>
