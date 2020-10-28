@@ -38,8 +38,7 @@
      <br><br><br>
      <img id="img_notebooks" src="./img/corei9_banner.png" width="100%">
     
-     <!--Rodapé-->
-     <?php require("includes/rodape.php");?>
-     <!--Rodapé-->
- </body>
- </html>
+    
+      <?php require("includes/rodape.php");?>
+
+    

@@ -1,33 +1,19 @@
+ <?php require("includes/cabeçalho.php"); ?>
  <?php
             $servername = "localhost";
             $username = "root";
             $password = "";
             $database = "infotec";
             $conn = mysqli_connect($servername, $username, $password, $database);
-            if (!$conn)
-            die (“Falha na conexão com o BD " . mysqli_connect_errno());
-            else
-            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.“;
+            if (!$conn) {
+
+            die ("Falha na conexão com o BD " . mysqli_connect_errno());
+            }
+            else {
+            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.";
+            }
             mysqli_close($conn);
  ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <title>Produtos InfoTec</title>
-      <link rel="stylesheet" type="text/css" href="./Styles/Estilos.css">
-      <script src="./JS/Produtos.js"></script>
-</head>
-<body>
-   <!-- Inicio do menu --> 
-     <nav class="menu">
-      <a href="index.html"> <img src="./img/Logo2.png" alt="InfoTec" width="100px"> </a>
-      <a href="Produtos.php">Produtos:</a>  
-      <a href="Loja.html">Nossa Loja:</a>
-      <a href="Contato.html">Contato:</a>
-        <img class="car" src="./img/carrinho de compras.png " onmouseout="zoom(this)" onmousemove="normal1(this)" title="Carrinho de Compras">
-      </nav>
-   <!-- Fim do menu --> 
     
    <header>   
          <div class="titulos_paginas"><h2>Produtos</h2></div>
@@ -240,19 +226,11 @@
        </div>
             <img src="./img/i9 back.jpg"width= 100%>
         
-       <footer id="rodapé">
-            <p id="pagamento">Formas de Pagamento: </p>
-            <img src="./img/Pagamento.png" width="30%"> 
-            <p id="InfoTec"> &copy; InfoTec </p> 
-       </footer>
+       <?php require("includes/rodape.php");?>
+   
 
 
-    </body>
-
-
-
-    </html>
-
+    
 
 
 

@@ -10,3 +10,6 @@
      </footer>
  </div>
     <!-- Ródape e Formas de pagamento -->
+
+ </body>
+ </html>

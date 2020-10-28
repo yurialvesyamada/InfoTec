@@ -27,12 +27,8 @@
    </div> 
    </main>
    
+    <?php require("includes/rodape.php");?>
    
-   <footer>
-      <?php require("includes/rodape.php");?>
-   </footer>
- </body>
- </html>
 
 
 

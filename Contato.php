@@ -57,6 +57,5 @@
       </div>
       
       </main>       
-      <?php require("includes/rodape.php");?>
-      </body>
-</html>
+     <?php require("includes/rodape.php");?>
+      
