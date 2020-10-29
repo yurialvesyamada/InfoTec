@@ -1,19 +1,4 @@
- <?php require("includes/cabeçalho.php"); ?>
- <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "infotec";
-            $conn = mysqli_connect($servername, $username, $password, $database);
-            if (!$conn) {
-
-            die ("Falha na conexão com o BD " . mysqli_connect_errno());
-            }
-            else {
-            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.";
-            }
-            mysqli_close($conn);
- ?>
+ 
     
    <header>   
          <div class="titulos_paginas"><h2>Produtos</h2></div>
