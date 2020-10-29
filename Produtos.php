@@ -1,20 +1,33 @@
  
     <?php require("includes/cabeçalho.php"); ?>
- <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "infotec";
-            $conn = mysqli_connect($servername, $username, $password, $database);
-            if (!$conn) {
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $dbname = "infotec";
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      mysqli_set_charset($conn, "UTF-8");
 
-            die ("Falha na conexão com o BD " . mysqli_connect_errno());
+      // Check connection
+      if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+      }
+      $sql = "SELECT * FROM produto";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                  echo "id: " . $row["idproduto"] . " - categoria: " . $row["categoria"] . "descricao" . $row["descricao"] . "<br>";
             }
-            else {
-            echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.";
-            }
-            mysqli_close($conn);
- ?>
+      } else {
+            echo "0 results";
+      }
+       $conn->close();
+      ?>
+ <!-- Fim de Conexão com Banco de Dados -->
+
    <header>   
          <div class="titulos_paginas"><h2>Produtos</h2></div>
    </header> 
