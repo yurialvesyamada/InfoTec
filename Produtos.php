@@ -1,14 +1,15 @@
  
-    <?php require("includes/cabeçalho.php"); ?>
-    <?php
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "infotec";
+ <?php require("includes/cabeçalho.php"); ?>
+      <?php
+          $servername = "localhost";
+          $username = "root";
+          $password = "";
+          $dbname = "infotec";
       // Create connection
-      $conn = new mysqli($servername, $username, $password, $dbname);
-      mysqli_set_charset($conn, "UTF-8");
-
+          $conn = new mysqli($servername, $username, $password, $dbname);
+      // Acertando UTF 8 //
+          $conn->query("set names utf8");
+      
       // Check connection
       if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -19,7 +20,7 @@
       if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-                  echo "id: " . $row["idproduto"] . " - categoria: " . $row["categoria"] . "descricao" . $row["descricao"] . "<br>";
+                  echo "id: " . $row["idproduto"] . " - Categoria: " . $row["categoria"] . " - Descricao: " . $row["descricao"] . "<br>";
             }
       } else {
             echo "0 results";
