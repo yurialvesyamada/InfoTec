@@ -2,7 +2,7 @@
  <?php require ("includes/cabeçalho.php"); ?>
  <?php require ("includes/conexao.php"); ?>
  <!-- Conexões com PHP -->
-   <?php
+ <?php
         if(isset($_POST['nome']) && isset($_POST['msg']) && isset($_POST['email'])) {
             $nome = $_POST['nome'];
             $email = $_POST['email'];
@@ -10,12 +10,12 @@
             echo $nome . "<br>" . $email . "<br>" .  $msg;
         }
    ?>
-    
+
  <body class="backgroundpadrao">
      <header>
          <div class="titulos_paginas">
              <h2>Contato</h2>
-             <hr id="line">
+             <hr class="line">
              <br>
      </header>
 
@@ -52,7 +52,7 @@
              </div>
 
          </div>
-         <hr id="line">
+         <hr class="line">
 
          <div class="formulario_contatos">
 
@@ -77,7 +77,7 @@
                  <br><br>
                  <input type="submit" name="submit" value="Enviar">
                  <br><br>
-                 <hr id="line">
+                 <hr class="line">
              </form>
 
          </div>
