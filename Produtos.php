@@ -1,6 +1,6 @@
  <!-- Conexões com PHP -->
  <?php require ("includes/cabeçalho.php"); ?>
- <?php require ("includes/conexão.php"); ?>
+ <?php require ("includes/conexao.php"); ?>
  <!-- Conexões com PHP -->
  <header>
      <div class="titulos_paginas">
@@ -37,7 +37,7 @@
                 
          ?>
             <div class="box_produtos" id="<?php echo $row["categoria"]; ?>" style="display:table;">
-                 <img src="<?php echo $row["imagem"]; ?>" title="Notebook Acer 15,6 A315-54-53M1 i5-10ª 8GB 1TB+128SSD Linux"
+                 <img src="<?php echo $row["imagem"]; ?>"
                      onmouseout="destaque(this)" onmousemove="normal(this)">
                  <br>
                  <img id="stars" src="./img/stars1.png">
