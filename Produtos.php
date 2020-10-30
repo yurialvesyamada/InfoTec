@@ -27,7 +27,7 @@
 
          <section class="produtos">
 
-         <?php
+             <?php
                  $sql = "SELECT * FROM produto";
                  $result = $conn->query($sql);
 
@@ -36,9 +36,8 @@
                  while ($row = $result->fetch_assoc()) {
                 
          ?>
-            <div class="box_produtos" id="<?php echo $row["categoria"]; ?>" style="display:table;">
-                 <img src="<?php echo $row["imagem"]; ?>"
-                     onmouseout="destaque(this)" onmousemove="normal(this)">
+             <div class="box_produtos" id="<?php echo $row["categoria"]; ?>" style="display:table;">
+                 <img src="<?php echo $row["imagem"]; ?>" onmouseout="destaque(this)" onmousemove="normal(this)">
                  <br>
                  <img id="stars" src="./img/stars1.png">
                  <p class="descricao_dos_produtos"><?php echo $row["descricao"]; ?> </p>
@@ -47,8 +46,8 @@
                  <p class="preco">R$<?php echo $row["valor_com_desconto"]; ?></p>
 
              </div>
-         
-         <?php
+
+             <?php
                 }
              } else {
              echo "0 results";
@@ -56,7 +55,7 @@
              $conn->close();
          ?>
 
-             
+
 
          </section>
      </div>

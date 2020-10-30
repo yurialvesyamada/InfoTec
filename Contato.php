@@ -1,5 +1,16 @@
- <?php require("includes/cabeçalho.php"); ?>
-
+ <!-- Conexões com PHP -->
+ <?php require ("includes/cabeçalho.php"); ?>
+ <?php require ("includes/conexao.php"); ?>
+ <!-- Conexões com PHP -->
+   <?php
+        if(isset($_POST['nome']) && isset($_POST['msg']) && isset($_POST['email'])) {
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $msg = $_POST['msg'];
+            echo $nome . "<br>" . $email . "<br>" .  $msg;
+        }
+   ?>
+    
  <body class="backgroundpadrao">
      <header>
          <div class="titulos_paginas">
@@ -44,16 +55,29 @@
          <hr id="line">
 
          <div class="formulario_contatos">
-             <form>
-                 <h2>Comente sobre nosso site:</h2>
-                 <h4>Nome/E-mail:</h4>
-                 <input type="text" placeholder="Digite seu E-mail:">
+
+             <form method="post" action="">
+                 <h2>Suporte</h2>
+                 <label for="comments">Sobre</label>
+                 <select id="comments" name="comments">
+                     <option value="dicas">Dicas</option>
+                     <option value="opiniões">Opiniões/Avaliações</option>
+                     <option value="produtos_desejados">Produtos desejados</option>
+                     <option value="erro">Relatar Erros/Bugs</option>
+                     <option value="outros">Outros</option>
+                 </select>
+                 <h3>Nome Completo:</h3>
+                 <input type="text" name="nome" placeholder="Digite seu nome">
                  <br>
-                 <h4>Mensagem</h4>
-                 <textarea placeholder="Escreva aqui:"></textarea>
+                 <h3>E-Mail:</h3>
+                 <input type="text" name="email" placeholder="Digite seu E-Mail">
+                 <br>
+                 <h3>Mensagem:</h3>
+                 <textarea name="msg"></textarea>
                  <br><br>
-                 <input type="submit" value="Enviar">
-                 <br>
+                 <input type="submit" name="submit" value="Enviar">
+                 <br><br>
+                 <hr id="line">
              </form>
 
          </div>
