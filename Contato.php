@@ -1,19 +1,18 @@
  <!-- Conexões com PHP -->
- <?php require ("includes/cabeçalho.php"); ?>
- <?php require ("includes/conexao.php"); ?>
+ <?php require("includes/cabeçalho.php"); ?>
+ <?php require("includes/conexao.php"); ?>
  <!-- Conexões com PHP -->
-   <?php
-        if(isset($_POST['nome']) && isset($_POST['msg']) && isset($_POST['email'])) {
-            $nome = $_POST['nome'];
-            $email = $_POST['email'];
-            $msg = $_POST['msg'];
-            
-            $sql = "insert into comentarios (nome, email, msg) values ('$nome' . '$email' . '$msg')";
-            $result = $conn->query($sql);
-            
-        }
-   ?>
-    
+ <?php
+    if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['msg'])) {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $msg = $_POST['msg'];
+
+        $sql = "insert into comentarios (nome, email, msg) values ('$nome', '$email', '$msg')";
+        $result = $conn->query($sql);
+    }
+    ?>
+
  <body class="backgroundpadrao">
      <header>
          <div class="titulos_paginas">
@@ -59,7 +58,7 @@
 
          <div class="formulario_contatos">
 
-             <form method="post" action="">
+             <!-- <form method="post" action="">
                  <h2>Fale Conosco:</h2>
                  <label for="comments">Sobre</label>
                  <select id="comments" name="comments">
@@ -69,7 +68,7 @@
                      <option value="erro">Relatar Erros/Bugs</option>
                      <option value="outros">Outros</option>
                  </select>
-             </form>
+             </form> -->
              <form method="post" action="">
                  <h3>Nome Completo:</h3>
                  <input type="text" name="nome" placeholder="Digite seu nome" required>
@@ -88,4 +87,4 @@
          </div>
 
      </main>
-     <?php require("includes/rodape.php");?>
+     <?php require("includes/rodape.php"); ?>
