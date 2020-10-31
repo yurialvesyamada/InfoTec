@@ -7,7 +7,10 @@
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $msg = $_POST['msg'];
-            echo $nome . "<br>" . $email . "<br>" .  $msg;
+            
+            $sql = "insert into comentarios (nome, email, msg) values ('$nome' . '$email' . '$msg')";
+            $result = $conn->query($sql);
+            
         }
    ?>
     
@@ -57,25 +60,27 @@
          <div class="formulario_contatos">
 
              <form method="post" action="">
-                 <h2>Suporte</h2>
+                 <h2>Fale Conosco:</h2>
                  <label for="comments">Sobre</label>
                  <select id="comments" name="comments">
                      <option value="dicas">Dicas</option>
-                     <option value="opiniões">Opiniões/Avaliações</option>
-                     <option value="produtos_desejados">Produtos desejados</option>
+                     <option value="opiniões" selected>Opiniões/Avaliações</option>
+                     <option value="produtos_desejados">Produtos Desejados</option>
                      <option value="erro">Relatar Erros/Bugs</option>
                      <option value="outros">Outros</option>
                  </select>
+             </form>
+             <form method="post" action="">
                  <h3>Nome Completo:</h3>
-                 <input type="text" name="nome" placeholder="Digite seu nome">
+                 <input type="text" name="nome" placeholder="Digite seu nome" required>
                  <br>
                  <h3>E-Mail:</h3>
-                 <input type="text" name="email" placeholder="Digite seu E-Mail">
+                 <input type="text" name="email" placeholder="Digite seu E-Mail" required>
                  <br>
                  <h3>Mensagem:</h3>
                  <textarea name="msg"></textarea>
                  <br><br>
-                 <input type="submit" name="submit" value="Enviar">
+                 <input type="submit" name="submit" value="Enviar" required>
                  <br><br>
                  <hr id="line">
              </form>
