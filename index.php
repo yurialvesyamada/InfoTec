@@ -1,4 +1,4 @@
- <?php require("includes/cabeçalho.php"); ?>
+ <?php require("includes/cabecalho.php"); ?>
 
  <body class="backgroundpadrao">
      <header>

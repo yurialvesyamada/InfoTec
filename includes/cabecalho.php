@@ -15,7 +15,9 @@
          <a href="Produtos.php">Produtos:</a>
          <a href="Loja.php">Nossa Lojas:</a>
          <a href="Contato.php">Contato:</a>
+         <a href="Pedidos.php">
          <img class="carrinho_de_compras" src="./img/carrinho.png" onmouseout="zoom(this)" onmousemove="normal1(this)"
-             title="Carrinho de Compras">
+             title="Carrinho de Compras"> 
+         </a>
      </nav>
      <!-- Fim do menu -->

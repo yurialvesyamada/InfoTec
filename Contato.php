@@ -1,5 +1,5 @@
  <!-- Conexões com PHP -->
- <?php require("includes/cabeçalho.php"); ?>
+ <?php require("includes/cabecalho.php"); ?>
  <?php require("includes/conexao.php"); ?>
  <!-- Conexões com PHP -->
  <?php
@@ -58,23 +58,14 @@
 
          <div class="formulario_contatos">
 
-             <!-- <form method="post" action="">
-                 <h2>Fale Conosco:</h2>
-                 <label for="comments">Sobre</label>
-                 <select id="comments" name="comments">
-                     <option value="dicas">Dicas</option>
-                     <option value="opiniões" selected>Opiniões/Avaliações</option>
-                     <option value="produtos_desejados">Produtos Desejados</option>
-                     <option value="erro">Relatar Erros/Bugs</option>
-                     <option value="outros">Outros</option>
-                 </select>
-             </form> -->
+             
              <form method="post" action="">
+                 <h2>Fale Conosco:</h2>
                  <h3>Nome Completo:</h3>
                  <input type="text" name="nome" placeholder="Digite seu nome" required>
                  <br>
                  <h3>E-Mail:</h3>
-                 <input type="text" name="email" placeholder="Digite seu E-Mail" required>
+                 <input type="email" name="email" placeholder="Digite seu E-Mail" required>
                  <br>
                  <h3>Mensagem:</h3>
                  <textarea name="msg"></textarea>

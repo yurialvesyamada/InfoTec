@@ -1,5 +1,5 @@
  <!-- Conexões com PHP -->
- <?php require ("includes/cabeçalho.php"); ?>
+ <?php require ("includes/cabecalho.php"); ?>
  <?php require ("includes/conexao.php"); ?>
  <!-- Conexões com PHP -->
  <header>
