@@ -11,6 +11,6 @@
       // Check connection
       if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
-      }
+      } 
        // Fim de Conexão com Banco de Dados 
 ?>

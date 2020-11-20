@@ -4,20 +4,19 @@
  <head>
      <meta charset="UTF-8">
      <title>InfoTec</title>
-     <link rel="stylesheet" type="text/css" href="./Styles/Estilos.css">
-     <script src="./JS/Produtos.js"></script>
+     <link rel="stylesheet" type="text/css" href="assets\css\estilos.css">
+     <script src="assets\javascript\produtos.js"></script>
  </head>
 
  <body>
      <!-- Inicio do menu -->
      <nav class="menu">
-         <a href="index.php"> <img src="./img/novologo.png" alt="InfoTec" width="90px"> </a>
-         <a href="Produtos.php">Produtos:</a>
-         <a href="Loja.php">Nossa Lojas:</a>
-         <a href="Contato.php">Contato:</a>
-         <a href="Pedidos.php">
-         <img class="carrinho_de_compras" src="./img/carrinho.png" onmouseout="zoom(this)" onmousemove="normal1(this)"
-             title="Carrinho de Compras"> 
+         <a href="index.php"> <img src="assets\img\novologo.png" alt="InfoTec" width="90px"> </a>
+         <a href="produtos.php">Produtos:</a>
+         <a href="loja.php">Nossa Lojas:</a>
+         <a href="contato.php">Contato:</a>
+         <a href="pedidos.php">
+             <img class="carrinho_de_compras" src="assets\img\carrinho.png" onmouseout="zoom(this)" onmousemove="normal1(this)" title="Carrinho de Compras">
          </a>
      </nav>
      <!-- Fim do menu -->

@@ -35,10 +35,10 @@
          </div>
          <hr id="line">
      </main>
-     <img id="img_notebooks" src="./img/amd.back.webp">
+     <img id="img_notebooks" src="assets\img\amd.back.webp">
      <br><br><br><br><br><br>
      <br><br><br>
-     <img id="img_notebooks" src="./img/corei9_banner.png" width="100%">
+     <img id="img_notebooks" src="assets\img\corei9_banner.png" width="100%">
 
 
      <?php require("includes/rodape.php");?>
