@@ -15,7 +15,7 @@
                  <ul>
                      <h3>Categorias:</h3>
                      <li onclick="exibir_todos()">Todos (16)</li>
-                     <li onclick="exibir_Categoria('Notebooks')">Notebooks (8)</li>
+                     <li onclick="exibir_Categoria('Notebook')">Notebooks (8)</li>
                      <li onclick="exibir_Categoria('Placa de Vídeo')">Placa de Vídeo (4)</li>
                      <li onclick="exibir_Categoria('Processadores')">Processadores (2)</li>
                      <li onclick="exibir_Categoria('Memória RAM')">Memória RAM (1)</li>
