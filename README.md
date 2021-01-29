@@ -13,6 +13,6 @@
 
 ## Ferramentas de desenvolvimento/versionamento:
 
-#### vscode
+#### Visual Studio Code
 #### GitHub
 
