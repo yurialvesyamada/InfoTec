@@ -11,12 +11,12 @@
  <body>
      <!-- Inicio do menu -->
      <nav class="menu">
-         <a href="index.php"> <img src="assets\img\novologo.png" alt="InfoTec" width="90px"> </a>
+         <a href="index.php"> <img src="img\novologo.png" alt="InfoTec" width="90px"> </a>
          <a href="produtos.php">Produtos:</a>
          <a href="loja.php">Nossa Lojas:</a>
          <a href="contato.php">Contato:</a>
          <a href="pedidos.php">
-             <img class="carrinho_de_compras" src="assets\img\carrinho.png" onmouseout="zoom(this)" onmousemove="normal1(this)" title="Carrinho de Compras">
+             <img class="carrinho_de_compras" src="img\carrinho.png" onmouseout="zoom(this)" onmousemove="normal1(this)" title="Carrinho de Compras">
          </a>
      </nav>
      <!-- Fim do menu -->

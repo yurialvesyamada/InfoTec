@@ -26,21 +26,21 @@
          <div class="enderecos">
              <div class="colunas_enderecos">
                  <div class="contato">
-                     <img src="assets\img\email-logo2.png" width="100px">
+                     <img src="img/email-logo2.png" width="100px">
                      <p>Lojas@infotec.com</p>
                  </div>
              </div>
 
              <div class="colunas_enderecos">
                  <div class="contato">
-                     <img src="assets\img\instagram_transparent2.jpg" width="100px">
+                     <img src="img/instagram_transparent2.jpg" width="100px">
                      <p>@InfoTec</p>
                  </div>
              </div>
 
              <div class="colunas_enderecos">
                  <div class="contato">
-                     <img src="assets\img\novologo.png" width="100px">
+                     <img src="img/novologo.png" width="100px">
                      <p>InfoTec</p>
                  </div>
              </div>
@@ -48,7 +48,7 @@
 
              <div class="colunas_enderecos">
                  <div class="contato">
-                     <img src="assets\img\wpp_transparent.png" width="100px">
+                     <img src="img/wpp_transparent.png" width="100px">
                      <p>(11) 94875-6799</p>
                  </div>
              </div>

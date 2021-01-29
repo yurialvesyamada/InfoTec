@@ -36,14 +36,14 @@
                     while ($row = $result->fetch_assoc()) {
 
                 ?>
-                     <div class="box_produtos" id="<?php echo $row["categoria"]; ?>" style="display:table;">
-                         <img src="<?php echo $row["imagem"]; ?>" onmouseout="destaque(this)" onmousemove="normal(this)">
+                     <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
+                         <img src="./img/<?php echo $row["imagem"]; ?>" onmouseout="destaque(this)" onmousemove="normal(this)">
                          <br>
-                         <img id="stars" src="assets\img\stars1.png">
+                         <img id="stars" src="/img/stars1.png">
                          <p class="descricao_dos_produtos"><?php echo $row["descricao"]; ?> </p>
-                         <hr id="style_hr">
-                         <p class="descricao_dos_produtos"><del>R$<?php echo $row["valor_sem_desconto"]; ?></del></p>
-                         <p class="preco">R$<?php echo $row["valor_com_desconto"]; ?></p>
+                         <hr id="Style_hr">
+                         <p class="descricao_dos_produtos"><del>R$<?php echo $row["preco"]; ?></del></p>
+                         <p class="preco">R$<?php echo $row["preco_final"]; ?></p>
 
                      </div>
 
@@ -65,8 +65,8 @@
          <div>
              <h2 id="titulos_dos_videos"> Intel 10th Gen CPU: Official Trailer </h2>
              <video controls class="video_intel">
-                 <source src="assets\img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/mp4">
-                 <source src="assets\img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/ogg">
+                 <source src="img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/mp4">
+                 <source src="img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/ogg">
              </video>
          </div>
 
@@ -74,13 +74,13 @@
 
          <h2 id="titulos_dos_videos"> 3rd Gen AMD Ryzen™ Technology</h2>
          <video controls class="video_intel">
-             <source src="assets\img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/mp4">
-             <source src="assets\img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/ogg">
+             <source src="img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/mp4">
+             <source src="img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/ogg">
          </video>
 
          <hr class="linhas2">
  </main>
  </div>
- <img src="assets\img\i9 back.jpg" width=100%>
+ <img src="img\i9 back.jpg" width=100%>
 
  <?php require("includes/rodape.php"); ?>
