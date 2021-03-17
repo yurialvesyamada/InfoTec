@@ -26,12 +26,11 @@
       font-size: 25px;
 }
 
-/* Footer */
 
 .footer-top {
-      text-align: center;
-      background-color: lightsteelblue;
-      padding: 8%;
+      background-color: whitesmoke;
+      padding: 3%;
+      color: #17a2b8;
 }
 
 .footer {
@@ -51,14 +50,6 @@
 body {
       margin: 0%;
       padding: 0%;
-}
-
-/* Fim de Ajuste das telas */
-
-/*  Pagamento Pag InfoTec*/
-#pagamento {
-      font-size: 25px;
-      color: black;
 }
 
 .categorias {
@@ -81,6 +72,7 @@ body {
 .title-list-items {
       padding-top: 30px;
       padding-bottom: 30px;
+      color: #17a2b8;
 }
 
 .list-items {
