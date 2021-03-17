@@ -11,12 +11,25 @@
              <div class="list">
                  <ul>
                      <h1 class="title-list-items">Categorias</h1>
-                     <li onclick="exibir_todos()" class="list-items">Todos (16)</li>
-                     <li onclick="exibir_Categoria('Notebook')" class="list-items">Notebooks (8)</li>
-                     <li onclick="exibir_Categoria('Placa de Vídeo')" class="list-items">Placa de Vídeo (4)</li>
-                     <li onclick="exibir_Categoria('Processadores')" class="list-items">Processadores (2)</li>
-                     <li onclick="exibir_Categoria('Memória RAM')" class="list-items">Memória RAM (1)</li>
-                     <li onclick="exibir_Categoria('Monitores')" class="list-items">Monitor (1)</li>
+                     <hr>
+                     <li onclick="exibir_todos()" class="list-items">Todos (23)</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Notebook')" class="list-items">Notebooks</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Placa de Vídeo')" class="list-items">Placa de Vídeo</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Processadores')" class="list-items">Processadores</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Memória RAM')" class="list-items">Memória RAM</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Monitores')" class="list-items">Monitor</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Pc Gamer')" class="list-items">Pc Gamer</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('SSD')" class="list-items">SSD</li>
+                     <hr>
+                     <li onclick="exibir_Categoria('Headset Gamer')" class="list-items">Headset Gamer</li>
+                     <hr>
                  </ul>
              </div>
          </section>
@@ -32,8 +45,8 @@
 
                 ?>
                      <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
-                         <img src="./img/<?php echo $row["imagem"]; ?>">
-                         <img src="./img/avaliacoes.png" style="width: 50%;">
+                         <img src="./img/<?php echo $row["imagem"]; ?>" title=" <?php echo $row["descricao"]; ?>">
+                         <img src="./img/avaliacoes.png" title="Conferir Avaliações" alt="Conferir Avaliações" style="width: 50%;">
                          <h3 class="description"> <?php echo $row["descricao"]; ?> </h3>
                          <hr>
                          <p style="color: red;"><del>R$<?php echo $row["preco"]; ?></del></p>
