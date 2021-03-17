@@ -5,7 +5,7 @@
  </header>
 
  <main>
-     <div class="adress-table">
+     <div class="table">
          <div>
              <h1>Rio de Janeiro</h1>
              <p>Avenida Presidente Vargas, 5000</p>

@@ -22,11 +22,11 @@ function exibir_Categoria(categoria) {
            
                 
          }  
+        };
 
 
-     };
 
-     let destaque = (imagem) => {
+     /* let destaque = (imagem) => {
         imagem.style = "padding:0px";
         imagem.getElementsByTagName("img")[0].style = "height: 70%";
       };
@@ -48,4 +48,4 @@ function exibir_Categoria(categoria) {
             titulo.getElementsByTagName ("title") [0].style = "width: 80px"; 
         
         };
-      
+       */

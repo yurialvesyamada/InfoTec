@@ -1,7 +1,6 @@
- <!-- Conexões com PHP -->
  <?php require("includes/cabecalho.php"); ?>
  <?php require("includes/conexao.php"); ?>
- <!-- Conexões com PHP -->
+
  <?php
     if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['msg'])) {
         $nome = $_POST['nome'];
@@ -17,60 +16,48 @@
      <h1 class="titles">Contato</h1>
  </header>
 
+
  <main>
 
-     <div class="enderecos">
-         <div class="colunas_enderecos">
-             <div class="contato">
-                 <img src="img/email-logo2.png" width="100px">
-                 <p>Lojas@infotec.com</p>
-             </div>
+     <div class="table">
+         <div>
+             <img src="img/email-logo2.png" width="100px">
+             <h3>Lojas@infotec.com</h3>
          </div>
 
-         <div class="colunas_enderecos">
-             <div class="contato">
-                 <img src="img/instagram_transparent2.jpg" width="100px">
-                 <p>@InfoTec</p>
-             </div>
+         <div>
+             <img src="img/instagram_transparent2.jpg" width="100px">
+             <h3>@InfoTec</h3>
          </div>
 
-         <div class="colunas_enderecos">
-             <div class="contato">
-                 <img src="img/novologo.png" width="100px">
-                 <p>InfoTec</p>
-             </div>
+         <div>
+             <img src="img/novologo.png" width="100px">
+             <h3>InfoTec</h3>
          </div>
 
-
-         <div class="colunas_enderecos">
-             <div class="contato">
-                 <img src="img/wpp_transparent.png" width="100px">
-                 <p>(11) 94875-6799</p>
-             </div>
+         <div>
+             <img src="img/wpp_transparent.png" width="100px">
+             <h3>(11) 94875-6799</h3>
          </div>
-
      </div>
-     <hr id="line">
-
-     <div class="formulario_contatos">
 
 
-         <form method="post" action="">
-             <h2>Fale Conosco:</h2>
-             <h3>Nome Completo:</h3>
-             <input type="text" name="nome" placeholder="Digite seu nome" required>
-             <br>
-             <h3>E-Mail:</h3>
-             <input type="email" name="email" placeholder="Digite seu E-Mail" required>
-             <br>
-             <h3>Mensagem:</h3>
+
+     <div class="form">
+         <h1 class="titles">Fale Conosco</h1>
+         <form method="post" action="" class="form-styles">
+             <h3>Nome Completo</h3>
+             <input type="text" name="nome" placeholder="Nome Completo" type="namespace" required>
+             <h3>E-Mail</h3>
+             <input type="email" name="email" placeholder="E-Mail" type="email" required>
+             <h3>Mensagem</h3>
              <textarea name="msg"></textarea>
-             <br><br>
-             <input type="submit" name="submit" value="Enviar" required>
-             <br><br>
-             <hr id="line">
+             <div style="margin-top: 20px; margin-bottom: 25px;">
+                 <button name="submit" value="Enviar" class="btn-style" required>
+                     Enviar
+                 </button>
+             </div>
          </form>
-
      </div>
 
  </main>

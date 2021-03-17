@@ -28,12 +28,11 @@
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
-                    // output data of each row
                     while ($row = $result->fetch_assoc()) {
 
                 ?>
                      <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
-                         <img src="./img/<?php echo $row["imagem"]; ?>" onmouseout="destaque(this)" onmousemove="normal(this)">
+                         <img src="./img/<?php echo $row["imagem"]; ?>">
                          <img src="./img/avaliacoes.png" style="width: 50%;">
                          <h3 class="description"> <?php echo $row["descricao"]; ?> </h3>
                          <hr>
