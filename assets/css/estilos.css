@@ -1,275 +1,181 @@
-      /* Background Principal */
-      .backgroundpadrao {
-            width: 100%;
-            background-color: lightskyblue;
-      }
+.allpages {
+      background-color: #f8f9fa;
+      text-align: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+}
 
-      /* Fim de Background Principal */
-      /* Banners Tela Principal */
-      .imagens_tela_inicial {
-            width: 100%;
-      }
+.menu {
+      display: flex;
+      list-style-type: none;
+      text-decoration: none;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid whitesmoke;
+      background-color: black;
+      margin: 0%;
+      padding: 15px;
+      font-size: 20px;
+}
 
-      /* Fim de Banners Tela Principal */
-      /* Barra Superior Geral*/
-      .menu {
-            display: flex;
-            list-style-type: none;
-            text-decoration: none;
-            justify-content: space-around;
-            align-items: center;
-            border: 2px solid goldenrod;
-            background-color: black;
-            margin: 0;
-            padding: 0%;
-            font-size: 20px;
-      }
+.menu a {
+      color: whitesmoke;
+      text-decoration: double;
+      font-size: 25px;
+}
 
-      /* Fim de Barra Superior Geral*/
+/* Footer */
 
-      /* Conteúdo Barra Superior */
+.footer-top {
+      text-align: center;
+      background-color: lightsteelblue;
+      padding: 8%;
+}
 
-      .menu a {
-            color: goldenrod;
-            text-decoration: double;
-      }
-
-      /* Fim de Conteúdo Barra Superior*/
-
-      /*Ajuste das telas */
-      body {
-            margin: 0%;
-            padding: 0%;
-      }
-
-      /* Fim de Ajuste das telas */
-
-      /*  Pagamento Pag InfoTec*/
-      #pagamento {
-            text-align: center;
-            font-size: 25px;
-            font-family: fantasy;
-            color: black;
-      }
-
-      /*  Fim de Pagamento Pag InfoTec*/
-
-      /*  InfoTec ©*/
-      #rodapé {
-            text-align: center;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-      }
-
-      /* Fim de InfoTec ©*/
-
-      /* Pagina Produtos */
-      /* Table Categorias */
-
-      .list_categorias {
-            border: 2px;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            display: table;
-            width: 20%;
-      }
-
-      .filtro {
-            display: table-cell;
-            font-family: Arial, Helvetica, sans-serif;
-      }
-
-      /* Fim da Table Categorias */
-      /* Produtos */
-
-      .produtos {
-            width: 80%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around
-      }
-
-      .box_produtos {
-            width: 20%;
-            border: solid 2px;
-            padding: 10px;
-            margin: 15px;
-            box-sizing: border-box;
-            box-shadow: 10px 10px 10px grey;
-            border-radius: 30px;
-            background-color: white;
-            text-align: center;
-      }
-
-      .box_produtos img {
-            width: 77%;
-            height: 40%;
-            object-fit: cover;
-            border-radius: 5px;
-      }
-
-      /* Estrelas Produtos */
-      #stars {
-            width: 90px;
-            height: 15px;
-            text-align: center;
-      }
-
-      /* Fim de Estrelas Produtos */
-
-      /* Videos Pagina Produtos */
-      .video_intel {
-            width: 500px;
-      }
-
-      #titulos_dos_videos {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-      }
-
-      #posicao_videos {
-            padding-top: 0px;
-            text-align: center;
-      }
-
-      /*Videos Pagina Produtos*/
-      /*Cards Produtos*/
-      .descricao_dos_produtos {
-
-            font-family: Arial, Helvetica, sans-serif;
-            size: 2;
-            text-align: center;
-      }
-
-      .preco {
-
-            font-family: Arial, Helvetica, sans-serif;
-            size: 5;
-            color: red;
-      }
-
-      /* Fim de Cards Produtos */
-      /* Fim de Pagina Produtos */
+.footer {
+      text-align: center;
+      font-size: 20px;
+      color: whitesmoke;
+      background-color: black;
+      padding: 10px;
+}
 
 
-      /* Pagina Loja */
-
-      .enderecos {
-
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-      }
-
-      .colunas_enderecos {
-
-            align-items: center;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif
-      }
-
-      /* Fim de Pagina Loja */
-      /* Pagina Contato */
-      .contato {
-
-            font-family: fantasy;
-            font-size: 25px;
-            text-align: center;
-      }
-
-      .titulos_paginas {
-
-            text-align: center;
-            font-family: fantasy;
-            font-size: 25px;
-      }
-
-      .formulario_contatos {
-            
-            color: black;
-            text-align: center;
-            font-family: serif;
-            align-content: center;
-            margin: auto;
-            font-size: 17px;
-            
-      }
-
-      /* Fim de Pagina Contato */
-
-      #InfoTec {
-            
-            text-align: center;
-            color: black;
-            font-size: 35px;
-            font-family: fantasy;
-      }
+.imagens_tela_inicial {
+      width: 100%;
+}
 
 
-      .linhas2 {
+body {
+      margin: 0%;
+      padding: 0%;
+}
 
-            width: 98%;
-            border-style: solid;
-            border-color: goldenrod;
-            margin-top: 100px;
-            margin-bottom: 100px;
-      }
+/* Fim de Ajuste das telas */
 
-      #principal {
-            display: flex;
-      }
-
-      #linhas3 {
-            margin-top: 100px;
-            color: goldenrod;
-      }
-
-      .carrinho_de_compras {
-
-            width: 80px;
-            display: flex;
-      }
-
-      #Style_hr {
-
-            color: goldenrod;
-            border-style: solid;
-      }
-
-      /* Inicio dos Cards Tela inicial */
-      .card {
-            box-shadow: 0 4px 8px 0 black (0, 0, 0, 0.2);
-            transition: 0.3s;
-            width: auto;
-            display: flex;
-            border-radius: 5px;
-      }
-
-      img {
-            border-radius: 5px 5px 0 0;
-      }
-
-      .card:hover {
-            box-shadow: 0 8px 16px 0 black (0, 0, 0, 0.2);
-      }
-
-      .lines {
-            border-style: solid;
-            border-color: black;
-            margin-top: 60px;
-      }
-
-      #line {
-            width: 85%;
-            border-style: double;
-            border-color: goldenrod;
-
-      }
+/*  Pagamento Pag InfoTec*/
+#pagamento {
+      font-size: 25px;
+      color: black;
+}
 
 
+/* Pagina Produtos */
+/* Table Categorias */
 
-      
+/* list_categorias  = categorias
+   filtro = list*/
+
+.categorias {
+      text-align: left;
+      display: table;
+      width: 20%;
+      background-color: white;
+      margin-top: 15px;
+      height: 35rem;
+      border: solid 1px;
+      border-radius: 5px;
+}
+
+.list ul {
+      display: table-cell;
+      list-style-type: none;
+}
+
+.title-list-items {
+      padding-top: 30px;
+      padding-bottom: 30px;
+}
+
+.list-items {
+      padding-bottom: 10px;
+}
+
+
+.produtos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around
+}
+
+.box_produtos {
+      width: 25%;
+      border: solid 2px;
+      padding: 10px;
+      margin: 15px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 10px;
+      background-color: white;
+}
+
+.box_produtos img {
+      width: 85%;
+      object-fit: cover;
+      padding-top: 5%;
+}
+
+.description {
+      margin-top: 10%;
+}
+
+.adress-table {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+
+.contato {
+
+      font-size: 25px;
+}
+
+.titles {
+      padding: 2%;
+      font-size: 35px;
+      color: #17a2b8;
+}
+
+
+.formulario_contatos {
+
+      color: black;
+      align-content: center;
+      margin: auto;
+      font-size: 17px;
+
+}
+
+.display {
+      display: flex;
+}
+
+
+.carrinho_de_compras {
+
+      width: 80px;
+      display: flex;
+}
+
+
+/* Inicio dos Cards Tela inicial */
+.card {
+      box-shadow: 0 4px 8px 0 black (0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: auto;
+      display: flex;
+      border-radius: 5px;
+}
+
+img {
+      border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+      box-shadow: 0 8px 16px 0 black (0, 0, 0, 0.2);
+}

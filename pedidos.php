@@ -4,11 +4,9 @@
  <!-- Conexões com PHP -->
 
  <header>
-     <div class="titulos_paginas">
-         <h2>Pedidos</h2>
-     </div>
+     <h1 class="titles">Pedidos</h1>
  </header>
- <hr id="line">
+ 
  <div class="formulario_contatos">
      <form method="post" action="">
          <h2>Dados Pessoais</h2>
@@ -36,18 +34,13 @@
              <option value="" default>Modelo/Marca</option> <?php echo $row["descricao"]; ?>
 
          </select>
-            <br><br><br>
-            <input type="submit" name="submit" value="Enviar" required>
-            <br><br>
-            <hr id="line">
+         <br><br><br>
+         <input type="submit" name="submit" value="Enviar" required>
+         <br><br>
+         <hr id="line">
      </form>
-   
-    </div>
-   
-   
-    <?php require("includes/rodape.php"); ?>
+
+ </div>
 
 
-
-
-
+ <?php require("includes/rodape.php"); ?>

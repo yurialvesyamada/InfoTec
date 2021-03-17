@@ -1,29 +1,25 @@
- <!-- Conexões com PHP -->
  <?php require("includes/cabecalho.php"); ?>
  <?php require("includes/conexao.php"); ?>
- <!-- Conexões com PHP -->
+
  <header>
-     <div class="titulos_paginas">
-         <h2>Produtos</h2>
-     </div>
+     <h1 class="titles">Produtos</h1>
  </header>
- <hr id="style_hr">
+
  <main>
-     <div id="principal">
-         <section class="list_categorias">
-             <div class="filtro">
+     <div class="display">
+         <section class="categorias">
+             <div class="list">
                  <ul>
-                     <h3>Categorias:</h3>
-                     <li onclick="exibir_todos()">Todos (16)</li>
-                     <li onclick="exibir_Categoria('Notebook')">Notebooks (8)</li>
-                     <li onclick="exibir_Categoria('Placa de Vídeo')">Placa de Vídeo (4)</li>
-                     <li onclick="exibir_Categoria('Processadores')">Processadores (2)</li>
-                     <li onclick="exibir_Categoria('Memória RAM')">Memória RAM (1)</li>
-                     <li onclick="exibir_Categoria('Monitores')">Monitor (1)</li>
+                     <h1 class="title-list-items">Categorias</h1>
+                     <li onclick="exibir_todos()" class="list-items">Todos (16)</li>
+                     <li onclick="exibir_Categoria('Notebook')" class="list-items">Notebooks (8)</li>
+                     <li onclick="exibir_Categoria('Placa de Vídeo')" class="list-items">Placa de Vídeo (4)</li>
+                     <li onclick="exibir_Categoria('Processadores')" class="list-items">Processadores (2)</li>
+                     <li onclick="exibir_Categoria('Memória RAM')" class="list-items">Memória RAM (1)</li>
+                     <li onclick="exibir_Categoria('Monitores')" class="list-items">Monitor (1)</li>
                  </ul>
              </div>
          </section>
-         <br><br>
 
          <section class="produtos">
 
@@ -38,14 +34,13 @@
                 ?>
                      <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
                          <img src="./img/<?php echo $row["imagem"]; ?>" onmouseout="destaque(this)" onmousemove="normal(this)">
-                         <br>
-                         <img id="stars" src="/img/stars1.png">
-                         <p class="descricao_dos_produtos"><?php echo $row["descricao"]; ?> </p>
-                         <hr id="Style_hr">
-                         <p class="descricao_dos_produtos"><del>R$<?php echo $row["preco"]; ?></del></p>
-                         <p class="preco">R$<?php echo $row["preco_final"]; ?></p>
-
+                         <img src="./img/avaliacoes.png" style="width: 50%;">
+                         <h3 class="description"> <?php echo $row["descricao"]; ?> </h3>
+                         <hr>
+                         <p style="color: red;"><del>R$<?php echo $row["preco"]; ?></del></p>
+                         <h2>R$<?php echo $row["preco_final"]; ?></h2>
                      </div>
+
 
              <?php
                     }
@@ -54,33 +49,13 @@
                 }
                 $conn->close();
                 ?>
-
-
-
          </section>
      </div>
 
-     <hr class="linhas2">
-     <div id="posicao_videos">
-         <div>
-             <h2 id="titulos_dos_videos"> Intel 10th Gen CPU: Official Trailer </h2>
-             <video controls class="video_intel">
-                 <source src="img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/mp4">
-                 <source src="img\videos\Intel 10th Gen CPU- Official Trailer.mp4" type="video/ogg">
-             </video>
-         </div>
-
-         <hr class="linhas2">
-
-         <h2 id="titulos_dos_videos"> 3rd Gen AMD Ryzen™ Technology</h2>
-         <video controls class="video_intel">
-             <source src="img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/mp4">
-             <source src="img\Videos\3rd Gen AMD Ryzen Technology.mp4" type="video/ogg">
-         </video>
-
-         <hr class="linhas2">
  </main>
+
+ <div style="padding-top: 5rem">
+     <img src="./img/i9-back.jpg" width=100%>
  </div>
- <img src="img\i9 back.jpg" width=100%>
 
  <?php require("includes/rodape.php"); ?>
