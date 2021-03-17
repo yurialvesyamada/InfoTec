@@ -21,22 +21,22 @@
 
      <div class="table">
          <div>
-             <img src="img/email-logo2.png" width="100px">
+             <img src="img/logo-email.png" width="130px">
              <h3>Lojas@infotec.com</h3>
          </div>
 
          <div>
-             <img src="img/instagram_transparent2.jpg" width="100px">
-             <h3>@InfoTec</h3>
+             <img src="img/logo-instagram.jpg" width="130px">
+             <h3><a href="http://infotec.infinityfreeapp.com/">Novo InfoTec</a></h3>
          </div>
 
          <div>
-             <img src="img/novologo.png" width="100px">
-             <h3>InfoTec</h3>
+             <img src="img/infotec.png" width="130px" style="border-radius: 8px;">
+             <h3><a href="http://infotec.infinityfreeapp.com/">Novo InfoTec</a></h3>
          </div>
 
          <div>
-             <img src="img/wpp_transparent.png" width="100px">
+             <img src="img/logo-whatspp.png" width="130px">
              <h3>(11) 94875-6799</h3>
          </div>
      </div>

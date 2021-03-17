@@ -42,5 +42,6 @@
 
  </div>
 
+ <img src="./img/formas-de-pagamento.png" alt="Formas de Pagamento" title="Formas de Pagamento" class="pay">
 
  <?php require("includes/rodape.php"); ?>

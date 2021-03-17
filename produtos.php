@@ -51,9 +51,13 @@
          </section>
      </div>
 
+     <a href="pedidos.php">
+         <img src="./img/formas-de-pagamento.png" alt="Formas de Pagamento" title="Formas de Pagamento" class="pay">
+     </a>
  </main>
 
- <div style="padding-top: 5rem">
+
+ <div>
      <img src="./img/i9-back.jpg" width=100%>
  </div>
 

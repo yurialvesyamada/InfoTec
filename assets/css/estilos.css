@@ -185,14 +185,13 @@ button {
       margin-bottom: 30px;
 }
 
-.carrinho_de_compras {
+.cart {
 
-      width: 80px;
+      width: 70px;
       display: flex;
 }
 
 
-/* Inicio dos Cards Tela inicial */
 .card {
       box-shadow: 0 4px 8px 0 black (0, 0, 0, 0.2);
       transition: 0.3s;
@@ -207,4 +206,11 @@ img {
 
 .card:hover {
       box-shadow: 0 8px 16px 0 black (0, 0, 0, 0.2);
+}
+
+.pay {
+      width: 50%;
+      height: 50%;
+      margin-top: 80px;
+      margin-bottom: 80px;
 }
