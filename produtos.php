@@ -37,10 +37,17 @@
                      <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
                          <img src="./img/<?php echo $row["imagem"]; ?>" title=" <?php echo $row["descricao"]; ?>">
                          <img src="./img/avaliacoes.png" title="Conferir Avaliações" alt="Conferir Avaliações" style="width: 50%;">
-                         <h3 class="description"> <?php echo $row["descricao"]; ?> </h3>
+                         <div class="description">
+                             <h3> <?php echo $row["descricao"]; ?> </h3>
+                         </div>
                          <hr>
                          <p style="color: red;"><del>R$<?php echo $row["preco"]; ?></del></p>
-                         <h2>R$<?php echo $row["preco_final"]; ?></h2>
+                         <h1 style="font-size: 30px;">R$<?php echo $row["preco_final"]; ?></h1>
+                         <div>
+                             <a href="pedidos.php">
+                                 <button>Comprar</button>
+                             </a>
+                         </div>
                      </div>
 
 
