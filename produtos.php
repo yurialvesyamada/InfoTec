@@ -6,35 +6,25 @@
  </header>
 
  <main>
-     <div class="display">
-         <section class="categorias">
+     <div class="display row">
+         <section class="categorias col-2">
              <div class="list">
                  <ul>
                      <h1 class="title-list-items">Categorias</h1>
-                     <hr>
                      <li onclick="exibir_todos()" class="list-items">Todos (23)</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Notebook')" class="list-items">Notebooks</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Placa de Vídeo')" class="list-items">Placa de Vídeo</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Processadores')" class="list-items">Processadores</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Memória RAM')" class="list-items">Memória RAM</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Monitores')" class="list-items">Monitor</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Pc Gamer')" class="list-items">Pc Gamer</li>
-                     <hr>
                      <li onclick="exibir_Categoria('SSD')" class="list-items">SSD</li>
-                     <hr>
                      <li onclick="exibir_Categoria('Headset Gamer')" class="list-items">Headset Gamer</li>
-                     <hr>
                  </ul>
              </div>
          </section>
 
-         <section class="produtos">
+         <section class="produtos col-9">
 
              <?php
                 $sql = "SELECT * FROM produto";
@@ -71,7 +61,7 @@
 
 
  <div>
-     <img src="./img/i9-back.jpg" width=100%>
+     <img src="./img/i9-back.jpg" style="width: 100%;">
  </div>
 
  <?php require("includes/rodape.php"); ?>
