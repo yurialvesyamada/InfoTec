@@ -1,19 +1,8 @@
  <?php require("includes/cabecalho.php"); ?>
  <?php require("includes/conexao.php"); ?>
 
- <?php
-    if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['msg'])) {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $msg = $_POST['msg'];
-
-        $sql = "insert into comentarios (nome, email, msg) values ('$nome', '$email', '$msg')";
-        $result = $conn->query($sql);
-    }
-    ?>
-
  <header>
-     <h1 class="titles">Contato</h1>
+     <h1>Contato</h1>
  </header>
 
 

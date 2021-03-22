@@ -2,7 +2,7 @@
  <?php require("includes/conexao.php"); ?>
 
  <header>
-     <h1 class="titles">Pedidos</h1>
+     <h1>Pedidos</h1>
  </header>
 
  <div class="form">
@@ -14,7 +14,6 @@
          <input type="date" name="nascimento" required>
          <h3>Endereço</h3>
          <input type="text" name="endereço" placeholder="Endereço" required>
-         <hr style="margin-top: 40px; margin-bottom: 40px;">
          <h2>Escolha o Produto</h2>
 
          <div>

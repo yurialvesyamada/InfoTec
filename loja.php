@@ -1,7 +1,7 @@
  <?php require("includes/cabecalho.php"); ?>
 
  <header>
-     <h1 class="titles">Nossas Lojas</h1>
+     <h1>Nossas Lojas</h1>
  </header>
 
  <main>
