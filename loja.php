@@ -5,7 +5,8 @@
  </header>
 
  <main>
-     <div class="table">
+
+     <div class="contact">
          <div>
              <h1>Rio de Janeiro</h1>
              <p>Avenida Presidente Vargas, 5000</p>
@@ -31,8 +32,5 @@
          </div>
      </div>
  </main>
- 
- <img id="img_notebooks" src="img/corei9_banner.png" width="100%">
-
 
  <?php require("includes/rodape.php"); ?>

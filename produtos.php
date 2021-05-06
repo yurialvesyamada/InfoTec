@@ -11,15 +11,15 @@
              <div class="list">
                  <ul>
                      <h1 class="title-list-items">Categorias</h1>
-                     <li onclick="exibir_todos()" class="list-items">Todos (23)</li>
-                     <li onclick="exibir_Categoria('Notebook')" class="list-items">Notebooks</li>
-                     <li onclick="exibir_Categoria('Placa de Vídeo')" class="list-items">Placa de Vídeo</li>
-                     <li onclick="exibir_Categoria('Processadores')" class="list-items">Processadores</li>
-                     <li onclick="exibir_Categoria('Memória RAM')" class="list-items">Memória RAM</li>
-                     <li onclick="exibir_Categoria('Monitores')" class="list-items">Monitor</li>
-                     <li onclick="exibir_Categoria('Pc Gamer')" class="list-items">Pc Gamer</li>
-                     <li onclick="exibir_Categoria('SSD')" class="list-items">SSD</li>
-                     <li onclick="exibir_Categoria('Headset Gamer')" class="list-items">Headset Gamer</li>
+                     <li onclick="exibir_todos()">Todos (23)</li>
+                     <li onclick="exibir_Categoria('Notebook')">Notebooks</li>
+                     <li onclick="exibir_Categoria('Placa de Vídeo')">Placa de Vídeo</li>
+                     <li onclick="exibir_Categoria('Processadores')">Processadores</li>
+                     <li onclick="exibir_Categoria('Memória RAM')">Memória RAM</li>
+                     <li onclick="exibir_Categoria('Monitores')">Monitor</li>
+                     <li onclick="exibir_Categoria('Pc Gamer')">Pc Gamer</li>
+                     <li onclick="exibir_Categoria('SSD')">SSD</li>
+                     <li onclick="exibir_Categoria('Headset Gamer')">Headset Gamer</li>
                  </ul>
              </div>
          </section>
@@ -66,9 +66,8 @@
      </a>
  </main>
 
-
- <div>
-     <img src="./img/i9-back.jpg" style="width: 100%;">
+ <div class="images-index">
+     <img src="./img/i9-back.jpg">
  </div>
 
  <?php require("includes/rodape.php"); ?>

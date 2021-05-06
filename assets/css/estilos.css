@@ -62,7 +62,6 @@ footer {
       height: auto;
 }
 
-
 .categorias {
       text-align: left;
       display: table;
@@ -82,18 +81,17 @@ footer {
       padding-right: 35px;
 }
 
+.list li {
+      padding-bottom: 10px;
+      padding-bottom: 25px;
+}
+
 .title-list-items {
       padding-top: 30px;
       padding-bottom: 30px;
       font-size: 30px;
       color: #17a2b8;
 }
-
-.list-items {
-      padding-bottom: 10px;
-      padding-bottom: 25px;
-}
-
 
 .produtos {
       width: 100%;
@@ -126,17 +124,22 @@ footer {
       padding: auto;
 }
 
-.table {
-      margin-top: 50px;
-      margin-bottom: 50px;
+
+.contact {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-
+      padding-top: 5%;
+      padding-bottom: 5%;
 }
 
-.table a {
+.contact img {
+      width: 120px;
+      border-radius: 10px;
+}
+
+.contact a {
       color: #17a2b8;
 }
 
