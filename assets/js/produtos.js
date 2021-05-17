@@ -1,6 +1,6 @@
 function exibir_Categoria(categoria) {
 
-    let elementos = document.getElementsByClassName("box_produtos")
+    let elementos = document.getElementsByClassName("cards")
     console.log(elementos);
 
     for(var i=0; i<elementos.length; i++) {
@@ -15,7 +15,7 @@ function exibir_Categoria(categoria) {
 };
 
      let exibir_todos = () => {
-     let elementos = document.getElementsByClassName("box_produtos")
+     let elementos = document.getElementsByClassName("cards")
         
          for(var i=0; i<elementos.length; i++) {
              elementos[i].style = "display:block";

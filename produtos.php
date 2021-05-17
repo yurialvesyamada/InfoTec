@@ -6,11 +6,11 @@
  </header>
 
  <main>
-     <div class="display row">
-         <section class="categorias col-2">
+     <div class="row">
+         <section class="categorias">
              <div class="list">
                  <ul>
-                     <h1 class="title-list-items">Categorias</h1>
+                     <h2 class="title-list-items">Categorias</h2>
                      <li onclick="exibir_todos()">Todos (23)</li>
                      <li onclick="exibir_Categoria('Notebook')">Notebooks</li>
                      <li onclick="exibir_Categoria('Placa de Vídeo')">Placa de Vídeo</li>
@@ -24,8 +24,7 @@
              </div>
          </section>
 
-         <section class="produtos col-9">
-
+         <section class="produtos">
              <?php
                 $sql = "SELECT * FROM produto";
                 $result = $conn->query($sql);
@@ -34,19 +33,25 @@
                     while ($row = $result->fetch_assoc()) {
 
                 ?>
-                     <div class="box_produtos" id="<?php echo $row["categoria"]; ?>">
-                         <img src="./img/<?php echo $row["imagem"]; ?>" title=" <?php echo $row["descricao"]; ?>">
-                         <img src="./img/avaliacoes.png" title="Conferir Avaliações" alt="Conferir Avaliações" style="width: 50%;">
-                         <div class="description">
-                             <h3> <?php echo $row["descricao"]; ?> </h3>
+                     <div class="cards" id="<?php echo $row["categoria"]; ?>">
+                         <div class="card-header">
+                             <img src="./img/<?php echo $row["imagem"]; ?>" title=" <?php echo $row["descricao"]; ?>">
+                             <div class="avaliacoes">
+                                 <img src="./img/avaliacoes.png" title="Conferir Avaliações" alt="Conferir Avaliações">
+                             </div>
                          </div>
-                         <hr>
-                         <p style="color: red;"><del>R$<?php echo $row["preco"]; ?></del></p>
-                         <h1 style="font-size: 30px;">R$<?php echo $row["preco_final"]; ?></h1>
-                         <div>
-                             <a href="pedidos.php">
-                                 <button>Comprar</button>
-                             </a>
+                         <div class="card-body">
+                             <h3> <?php echo $row["descricao"]; ?> </h3>
+                             <p><del>R$<?php echo $row["preco"]; ?></del></p>
+                             <h4>R$<?php echo $row["preco_final"]; ?></h4>
+                         </div>
+
+                         <div class="row card-footer">
+                             <div class="btn">
+                                 <a href="pedidos.php">
+                                     <button>Eu Quero</button>
+                                 </a>
+                             </div>
                          </div>
                      </div>
 
@@ -61,13 +66,13 @@
          </section>
      </div>
 
-     <a href="pedidos.php">
+     <!--  <a href="pedidos.php">
          <img src="./img/formas-de-pagamento.png" alt="Formas de Pagamento" title="Formas de Pagamento" class="pay">
      </a>
  </main>
 
  <div class="images-index">
      <img src="./img/i9-back.jpg">
- </div>
+ </div> -->
 
- <?php require("includes/rodape.php"); ?>
+     <?php require("includes/rodape.php"); ?>
