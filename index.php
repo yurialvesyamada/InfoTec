@@ -1,4 +1,4 @@
- <?php require("includes/cabecalho.php"); ?>
+ <?php require("includes/header.php"); ?>
 
  <div class="card">
      <img src="img/core-i9.jpg" alt="Intel Core i9-9900K" title="Intel Core i9-9900K">
@@ -13,4 +13,4 @@
      <img src="img/back_amd.jpg">
  </main>
 
- <?php require("includes/rodape.php"); ?>
+ <?php require("includes/footer.php"); ?>

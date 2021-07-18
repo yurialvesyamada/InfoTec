@@ -1,18 +1,17 @@
-# Primeiro projeto desenvolvido no Recode Pro 
+# Primeiro projeto desenvolvido durante o Recode Pro 2020
 
-### InfoTec 1.0
-
+## InfoTec 1.0
 
 ## Linguagens utilizadas:
 
-#### HTML
-#### CSS
+#### HTML5
+#### CSS3
 #### JavaScript
-#### MySql
 #### PHP
+#### MySQL
 
-## Ferramentas de desenvolvimento/versionamento:
+## Ferramentas de versionamento/desenvolvimento:
 
+#### Git - GitHub
 #### Visual Studio Code
-#### GitHub
 
