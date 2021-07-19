@@ -2,15 +2,14 @@
 <?php require("includes/conexao.php"); ?>
 
 <header>
-    <h1>Produtos</h1>
+    <h1 class="p-5">Produtos</h1>
 </header>
 
 <main>
     <div class="row">
-
-        <section class="categorias col-2 col-s-12 col-md-12">
+        <section class="categorias col-3">
+            <h2 class="p-5">Categorias</h2>
             <ul>
-                <h2>Categorias</h2>
                 <li onclick="exibir_todos()">Todos (23)</li>
                 <li onclick="exibir_Categoria('Notebook')">Notebooks</li>
                 <li onclick="exibir_Categoria('Placa de Vídeo')">Placa de Vídeo</li>
@@ -23,23 +22,22 @@
             </ul>
         </section>
 
-        <section class="produtos col-10 col-s-12 col-md-12">
+        <section class="produtos col-9">
             <?php
             $sql = "SELECT * FROM produto";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
-
             ?>
-                    <div class="cards col-3 col-s-12 col-md-12" id="<?php echo $row["categoria"]; ?>">
+                    <div class="cards col-4" id="<?php echo $row["categoria"]; ?>">
                         <div class="card-header">
                             <img src="./img/<?php echo $row["imagem"]; ?>" title=" <?php echo $row["descricao"]; ?>">
-                            <div class="avaliacoes">
+                            <!-- <div class="avaliacoes">
                                 <img src="./img/avaliacoes.png" title="Conferir Avaliações" alt="Conferir Avaliações">
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="card-body">
+                        <!--  <div class="card-body">
                             <h3> <?php echo $row["descricao"]; ?> </h3>
                             <p><del>R$<?php echo $row["preco"]; ?></del></p>
                             <h4>R$<?php echo $row["preco_final"]; ?></h4>
@@ -51,7 +49,7 @@
                                     <button>Eu Quero</button>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
 
