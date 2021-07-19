@@ -16,14 +16,14 @@
 }
 
 .logo {
-      width: 56px;
+      width: 95px;
       height: auto;
-      border-radius: 5px;
+      border-radius: 7px;
       border: 1px solid whitesmoke;
 }
 
 .navbar li {
-      font: normal 300 0.8em 'Open Sans', sans-serif;
+      font: normal 300 1.4em 'Open Sans', sans-serif;
 }
 
 .navbar li:hover {
@@ -42,7 +42,7 @@
 }
 
 footer {
-      font: italic 300 0.7em 'Open Sans', sans-serif;
+      font: italic 300 1.5em 'Open Sans', sans-serif;
       color: whitesmoke;
       background-color: rgba(0, 0, 0, 0.849);
       padding: 1em 0;
@@ -50,96 +50,116 @@ footer {
 
 .footer_links {
       background-color: rgba(95, 158, 160, 0.753);
-      padding: 3.5em 0;
+      padding: 6em 0;
 }
 
 .footer_links p {
-      font: normal 500 1em 'Open Sans', sans-serif;
+      font: normal 500 2em 'Open Sans', sans-serif;
 }
 
 
 /* Produtos */
 
 .categorias {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+      z-index: 99;
+      background-color: rgba(48, 59, 64, 0.824);
+}
+
+.categorias ul {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
-      -ms-flex-align: center;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 2em;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      border-radius: 3px;
+      justify-content: space-evenly;
+      margin: 2em auto;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
 }
 
 .categorias li {
-      font: normal 600 0.7em 'Open Sans', sans-serif;
-      padding: 0.8em 0;
-      color: #17a2b8;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      float: left;
+      padding: 1.2em 0;
+      font: italic 400 1.5em 'Open Sans', sans-serif;
+      color: white;
 }
 
 .categorias li:hover {
-      border-bottom: 1px solid #17a2b8;
       cursor: pointer;
 }
-
 
 .produtos {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-evenly;
-      align-content: space-around;
-      margin: 0 0 2em;
-      
+      align-items: center;
+
 }
 
-.cards {
+.cards-flex-container {
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       border-radius: 3px;
       height: 100%;
-      margin: 0 0 1em;
+      margin: 0 0 2em;
+      text-align: center;
+      justify-content: space-evenly;
+      align-content: space-between;
+      margin: auto;
 }
 
 .card-header img {
-      width: 85%;
+      width: 75%;
 }
 
-/* .avaliacoes>img {
+.avaliacoes img {
       width: 40%;
 }
 
 .card-body {
-      padding: 1%;
+      padding: 0.5em;
+}
+
+.card-body h3 {
+      font: normal 300 1em 'Open Sans', sans-serif;
+      padding: 0.5em 0;
 }
 
 .card-body>p {
-      color: red;
-      font-size: 15px;
+      color: rgba(255, 0, 0, 0.664);
+      padding: 0.5em 0;
 }
 
 .card-body>h4 {
-      font-size: 28px;
+      color: rgba(82, 82, 82, 0.801);
+      font: normal normal 2em Arial, sans-serif;
+      padding: 0.5em 0;
 }
 
 .card-footer {
-      margin: auto;
-
+      padding: 0.5em 0;
 }
 
-.btn button {
-      height: 6vh;
-      color: whitesmoke;
-      font-size: 20px;
-      background-color: #17a2b8;
-      border-radius: 8px;
+.card-button button {
+
+      width: 90%;
+      padding: 0.5em;
+      margin: 0.5em 0;
+      text-align: center;
+      background-color: rgba(95, 158, 160, 0.753);
       border: none;
-      width: 100%;
-      margin-top: 8%;
-      margin-bottom: 8%;
-} */
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+      font: normal bold 1.2em 'Open Sans', sans-serif;
+      color: whitesmoke;
+      display: inline-block;
+      margin: 1em 0;
+}
 
 
 /* .contact {
@@ -232,7 +252,7 @@ textarea {
 [class*="col-"] {
       width: 100%;
       float: left;
-      padding: 0 15px;
+      margin: 1em;
 }
 
 .col-1 {
@@ -281,6 +301,8 @@ textarea {
 
 .col-12 {
       width: 100%;
+      padding: 0;
+      margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
