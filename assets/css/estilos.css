@@ -162,7 +162,7 @@ footer {
 }
 
 
-/* .contact {
+.contact {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -241,7 +241,7 @@ textarea {
       height: 50%;
       margin-top: 80px;
       margin-bottom: 80px;
-} */
+}
 
 .row::after {
       content: "";
